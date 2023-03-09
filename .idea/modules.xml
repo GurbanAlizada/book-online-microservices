@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/book-online-microservice.iml" filepath="$PROJECT_DIR$/.idea/book-online-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euroka-server/euroka-server.iml" filepath="$PROJECT_DIR$/euroka-server/euroka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libary-service/libary-service.iml" filepath="$PROJECT_DIR$/libary-service/libary-service.iml" />
+    </modules>
+  </component>
+</project>
