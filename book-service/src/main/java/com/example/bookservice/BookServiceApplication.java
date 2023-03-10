@@ -1,14 +1,37 @@
 package com.example.bookservice;
 
+import com.example.bookservice.model.Book;
+import com.example.bookservice.repository.BookRepository;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 
 @SpringBootApplication
-public class BookServiceApplication {
+public class BookServiceApplication implements CommandLineRunner {
+
+	private final BookRepository bookRepository;
+
+	public BookServiceApplication(BookRepository bookRepository) {
+		this.bookRepository = bookRepository;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(BookServiceApplication.class, args);
 	}
 
+	@Override
+	public void run(String... args) throws Exception {
+
+		Book book1 = new Book("Harry Potter" , "JR" , "34255343" , "PSG" , 2012);
+		Book book2 = new Book("Life" , "Alex" , "9348494" , "AJAX" , 2020);
+		Book book3 = new Book("Water" , "Herry" , "2345323" , "Ist" ,1999);
+		List<Book> books = bookRepository.saveAll(Arrays.asList(book1 , book2 , book3));
+		System.out.println(books);
+
+
+	}
 }

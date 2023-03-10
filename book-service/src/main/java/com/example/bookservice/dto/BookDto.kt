@@ -1,7 +1,6 @@
 package com.example.bookservice.dto
 
 import com.example.bookservice.model.Book
-import java.util.*
 
 data class BookDto @JvmOverloads constructor(
 
@@ -9,7 +8,7 @@ data class BookDto @JvmOverloads constructor(
     val title: String ,
     val author: String,
     val pressName: String,
-    val date: Date
+    val publishYear: Int
 
 ){
 
@@ -21,7 +20,7 @@ data class BookDto @JvmOverloads constructor(
             from.title,
             from.author,
             from.pressName,
-            from.date
+            from.publishYear
             )
         }
 
