@@ -1,24 +1,38 @@
 package com.example.libaryservice.service;
 
+import com.example.libaryservice.client.BookServiceClient;
+import com.example.libaryservice.dto.request.AddBookRequest;
 import com.example.libaryservice.dto.response.LibraryDto;
 import com.example.libaryservice.exception.LibraryNotFoundException;
 import com.example.libaryservice.model.Library;
 import com.example.libaryservice.repository.LibraryRepository;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.stream.Collectors;
 
 
 @Service
 public class LibraryService {
 
     private final LibraryRepository libraryRepository;
+    private final BookServiceClient bookServiceClient;
 
-    public LibraryService(LibraryRepository libraryRepository) {
+    public LibraryService(LibraryRepository libraryRepository, BookServiceClient bookServiceClient) {
         this.libraryRepository = libraryRepository;
+        this.bookServiceClient = bookServiceClient;
     }
 
     public LibraryDto getAllBooksInLibraryById(String id){
         Library libary = getById(id);
-        LibraryDto result = new LibraryDto(libary.getId());
+        LibraryDto result = new LibraryDto(libary.getId() ,
+                libary.getUserBook()
+                        .stream()
+                        .map(bookServiceClient::getBookById)
+                        .map(ResponseEntity::getBody)
+                        .collect(Collectors.toList())
+
+        );
         return result;
     }
 
@@ -27,6 +41,15 @@ public class LibraryService {
         Library libary = libraryRepository.save(new Library());
         return new LibraryDto(libary.getId());
     }
+
+
+    public void addBookToLibrary(AddBookRequest request){
+        String bookId = bookServiceClient.getBooksByIsbn(request.getIsbn()).getBody().getId();
+        Library library = getById(request.getId());
+        library.getUserBook().add(bookId);
+        libraryRepository.save(library);
+    }
+
 
 
     protected Library getById(String id){

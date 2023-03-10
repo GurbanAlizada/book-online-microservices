@@ -1,6 +1,7 @@
 package com.example.bookservice.service;
 
 
+import com.example.bookservice.dto.request.CreateBookRequest;
 import com.example.bookservice.dto.response.BookDto;
 import com.example.bookservice.dto.response.BookIdDto;
 import com.example.bookservice.exception.BookNotFoundException;
@@ -40,7 +41,17 @@ public class BookService {
 
     public BookDto findBookById(String id){
         Book fromDb = findById(id);
-        BookDto result = BookDto.convert(fromDb);
+        final BookDto result = BookDto.convert(fromDb);
+        return result;
+    }
+
+    public BookIdDto createBook(CreateBookRequest request){
+        Book book = new Book(request.getTitle() , request.getAuthor() ,
+                request.getIsbn() , request.getPressName() ,
+                request.getPublishYear()
+        );
+        final Book fromDb = bookRepository.save(book);
+        final BookIdDto result = BookIdDto.convert(fromDb.getId(), fromDb.getIsbn());
         return result;
     }
 

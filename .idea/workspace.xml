@@ -5,24 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d71d0f7-5eaa-4dac-a1da-1537063d038d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/controller/LibraryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/request/AddBookRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/response/BookDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/response/BookIdDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/response/LibraryDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/LibraryNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/repository/LibraryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/service/LibraryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/dto/request/CreateBookRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/BookServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/ExceptionMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/RetrieveMessageErrorDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/BookNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/GeneralExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/BookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/BookServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/dto/BookDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/dto/response/BookDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/dto/BookIdDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/dto/response/BookIdDto.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/euroka-server/src/main/java/com/example/eurokaserver/EurokaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/euroka-server/src/main/java/com/example/eurokaserver/EurokaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/euroka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/euroka-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/LibaryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/LibraryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/model/Libary.kt" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/model/Library.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/test/java/com/example/libaryservice/LibaryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/test/java/com/example/libaryservice/LibraryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/LibraryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/LibraryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/controller/LibraryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/request/AddBookRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/request/AddBookRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/service/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,7 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -100,8 +100,11 @@
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.example.bookservice.dto.response" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.libaryservice.exception" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurokaServerApplication">
+  <component name="RunManager" selected="Spring Boot.BookServiceApplication">
     <configuration name="BookServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="book-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bookservice.BookServiceApplication" />
@@ -134,7 +137,7 @@
       <updated>1678379864888</updated>
       <workItem from="1678379866294" duration="12027000" />
       <workItem from="1678432525570" duration="5432000" />
-      <workItem from="1678441475710" duration="6877000" />
+      <workItem from="1678441475710" duration="16674000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1678390919058</created>
@@ -150,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678445356242</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init libary-service">
+      <created>1678448774060</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678448774060</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="init book-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="init book-service" />
+    <MESSAGE value="init libary-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="init libary-service" />
   </component>
 </project>

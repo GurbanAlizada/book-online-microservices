@@ -1,15 +1,14 @@
 package com.example.bookservice.controller;
 
 
+import com.example.bookservice.dto.request.CreateBookRequest;
 import com.example.bookservice.dto.response.BookDto;
 import com.example.bookservice.dto.response.BookIdDto;
 import com.example.bookservice.service.BookService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -38,6 +37,11 @@ public class BookController {
         return ResponseEntity.ok(bookService.findBookById(id));
     }
 
+
+    @PostMapping
+    public ResponseEntity<BookIdDto> createBook(@RequestBody @Valid CreateBookRequest request){
+        return ResponseEntity.ok(bookService.createBook(request));
+    }
 
 
 

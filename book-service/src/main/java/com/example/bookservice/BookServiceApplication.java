@@ -5,12 +5,14 @@ import com.example.bookservice.repository.BookRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 import java.util.Arrays;
-import java.util.Date;
+
 import java.util.List;
 
 @SpringBootApplication
+@EnableEurekaClient
 public class BookServiceApplication implements CommandLineRunner {
 
 	private final BookRepository bookRepository;
