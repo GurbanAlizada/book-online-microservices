@@ -1,0 +1,13 @@
+package com.example.libaryservice.dto.response
+
+data class LibraryDto @JvmOverloads constructor(
+
+    val id: String,
+    val userBookList: List<BookDto>? = ArrayList()
+
+){
+
+
+
+
+}

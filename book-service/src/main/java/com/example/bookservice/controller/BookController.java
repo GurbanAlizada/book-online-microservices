@@ -1,8 +1,8 @@
 package com.example.bookservice.controller;
 
 
-import com.example.bookservice.dto.BookDto;
-import com.example.bookservice.dto.BookIdDto;
+import com.example.bookservice.dto.response.BookDto;
+import com.example.bookservice.dto.response.BookIdDto;
 import com.example.bookservice.service.BookService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

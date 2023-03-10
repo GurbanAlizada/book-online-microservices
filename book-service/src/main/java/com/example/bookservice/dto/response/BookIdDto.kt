@@ -1,4 +1,4 @@
-package com.example.bookservice.dto
+package com.example.bookservice.dto.response
 
 data class BookIdDto @JvmOverloads constructor(
 
@@ -9,7 +9,7 @@ data class BookIdDto @JvmOverloads constructor(
 
     companion object{
         @JvmStatic
-        fun convert(id:String , isbn: String): BookIdDto{
+        fun convert(id:String , isbn: String): BookIdDto {
             return BookIdDto(id , isbn)
         }
 

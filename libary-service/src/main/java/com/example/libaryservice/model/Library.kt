@@ -6,7 +6,7 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "libaries")
-data class Libary @JvmOverloads constructor(
+data class Library @JvmOverloads constructor(
 
     @Id
     @GeneratedValue(generator = "UUID")

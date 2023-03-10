@@ -1,8 +1,8 @@
 package com.example.bookservice.service;
 
 
-import com.example.bookservice.dto.BookDto;
-import com.example.bookservice.dto.BookIdDto;
+import com.example.bookservice.dto.response.BookDto;
+import com.example.bookservice.dto.response.BookIdDto;
 import com.example.bookservice.exception.BookNotFoundException;
 import com.example.bookservice.model.Book;
 import com.example.bookservice.repository.BookRepository;
