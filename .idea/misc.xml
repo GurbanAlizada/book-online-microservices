@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/book-service/pom.xml" />
         <option value="$PROJECT_DIR$/euroka-server/pom.xml" />
         <option value="$PROJECT_DIR$/libary-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
       </list>
     </option>
   </component>

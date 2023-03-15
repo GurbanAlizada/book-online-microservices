@@ -9,12 +9,14 @@
         <module name="book-service" />
         <module name="euroka-server" />
         <module name="libary-service" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book-service" target="16" />
       <module name="book-service (1)" target="1.5" />
       <module name="euroka-server" target="16" />
+      <module name="gateway" target="16" />
       <module name="libary-service" target="16" />
       <module name="libary-service (1)" target="1.5" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="book-service" options="-parameters" />
       <module name="euroka-server" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="libary-service" options="-parameters" />
     </option>
   </component>

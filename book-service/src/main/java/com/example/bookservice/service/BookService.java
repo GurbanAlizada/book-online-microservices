@@ -8,6 +8,7 @@ import com.example.bookservice.exception.BookNotFoundException;
 import com.example.bookservice.model.Book;
 import com.example.bookservice.repository.BookRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -24,7 +25,7 @@ public class BookService {
 
     public List<BookDto> getAllBooks() {
         List<Book> books = bookRepository.findAll();
-        List<BookDto> result = books
+        final List<BookDto> result = books
                 .stream()
                 //.map(n -> BookDto.convert(n))
                 .map(BookDto::convert)
@@ -33,8 +34,11 @@ public class BookService {
     }
 
     public BookIdDto findByIsbn(String isbn) {
-        Book book = bookRepository.findByIsbn(isbn).orElseThrow(() -> new BookNotFoundException("Book could not found by isbn " + isbn));
-        BookIdDto result = BookIdDto.convert(book.getId(), book.getTitle());
+         Book book = bookRepository.findByIsbn(isbn)
+                .orElseThrow(
+                        () -> new BookNotFoundException("Book could not found by isbn " + isbn)
+                );
+        final BookIdDto result = BookIdDto.convert(book.getId(), book.getTitle());
         return result;
     }
 
@@ -45,9 +49,14 @@ public class BookService {
         return result;
     }
 
+
+    @Transactional
     public BookIdDto createBook(CreateBookRequest request){
-        Book book = new Book(request.getTitle() , request.getAuthor() ,
-                request.getIsbn() , request.getPressName() ,
+        Book book = new Book(
+                request.getTitle() ,
+                request.getAuthor() ,
+                request.getIsbn() ,
+                request.getPressName() ,
                 request.getPublishYear()
         );
         final Book fromDb = bookRepository.save(book);
@@ -63,8 +72,6 @@ public class BookService {
                 );
         return book;
     }
-
-
 
 
 

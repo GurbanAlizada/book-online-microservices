@@ -1,11 +1,13 @@
-package com.example.libaryservice.client;
+package com.example.libaryservice.exception;
 
 public record ExceptionMessage(
         String timestamp,
         int status ,
         String error ,
         String message,
-        String path) {
+        String path
+)
+{
 
 
 }

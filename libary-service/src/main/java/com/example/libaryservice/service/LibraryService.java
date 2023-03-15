@@ -8,6 +8,7 @@ import com.example.libaryservice.model.Library;
 import com.example.libaryservice.repository.LibraryRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.stream.Collectors;
 
@@ -37,12 +38,14 @@ public class LibraryService {
     }
 
 
+    @Transactional
     public LibraryDto createLibrary(){
         Library libary = libraryRepository.save(new Library());
         return new LibraryDto(libary.getId());
     }
 
 
+    @Transactional
     public void addBookToLibrary(AddBookRequest request){
         String bookId = bookServiceClient.getBooksByIsbn(request.getIsbn()).getBody().getId();
         Library library = getById(request.getId());

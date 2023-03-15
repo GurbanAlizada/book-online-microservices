@@ -33,7 +33,5 @@ public class BookServiceApplication implements CommandLineRunner {
 		Book book3 = new Book("Water" , "Herry" , "2345323" , "Ist" ,1999);
 		List<Book> books = bookRepository.saveAll(Arrays.asList(book1 , book2 , book3));
 		System.out.println(books);
-
-
 	}
 }
