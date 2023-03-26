@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d71d0f7-5eaa-4dac-a1da-1537063d038d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_30.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/BookServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/BookServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/model/Book.kt" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/model/Book.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/example/bookservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/LibraryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/LibraryServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/BookServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/BookServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/ExceptionMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/ExceptionMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/RetrieveMessageErrorDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/client/RetrieveMessageErrorDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/response/BookDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/dto/response/BookDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/BookNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/BookNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/GeneralExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/exception/GeneralExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/model/Library.kt" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/model/Library.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/controller/LibraryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/service/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +73,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -153,7 +148,14 @@
       <workItem from="1678729231203" duration="3021000" />
       <workItem from="1678774183389" duration="1010000" />
       <workItem from="1678804359372" duration="3317000" />
-      <workItem from="1678892755213" duration="1468000" />
+      <workItem from="1678892755213" duration="3422000" />
+      <workItem from="1678941959167" duration="588000" />
+      <workItem from="1679130079602" duration="452000" />
+      <workItem from="1679130559844" duration="6758000" />
+      <workItem from="1679210137447" duration="1202000" />
+      <workItem from="1679577732951" duration="592000" />
+      <workItem from="1679759353688" duration="2489000" />
+      <workItem from="1679832282177" duration="6805000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1678390919058</created>
@@ -183,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678468544334</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added API GATEWAY">
+      <created>1678894327083</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678894327083</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +203,7 @@
     <MESSAGE value="init book-service" />
     <MESSAGE value="init libary-service" />
     <MESSAGE value="Spring Cloud Eureka Server/Client, Feign Client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Eureka Server/Client, Feign Client" />
+    <MESSAGE value="added API GATEWAY" />
+    <option name="LAST_COMMIT_MESSAGE" value="added API GATEWAY" />
   </component>
 </project>

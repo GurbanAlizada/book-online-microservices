@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.stream.Collectors;
 
 
@@ -61,6 +62,13 @@ public class LibraryService {
                         () -> new LibraryNotFoundException("libary could not found: " + id)
                 );
         return libary;
+    }
+
+
+    public List<String> getAllLibraries() {
+        List<Library> libraries = libraryRepository.findAll();
+        List<String> libraryIds = libraries.stream().map(n->n.getId()).collect(Collectors.toList());
+        return libraryIds;
     }
 
 
