@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/book-online-microservice.iml" filepath="$PROJECT_DIR$/.idea/book-online-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/euroka-server/euroka-server.iml" filepath="$PROJECT_DIR$/euroka-server/euroka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/libary-service/libary-service.iml" filepath="$PROJECT_DIR$/libary-service/libary-service.iml" />

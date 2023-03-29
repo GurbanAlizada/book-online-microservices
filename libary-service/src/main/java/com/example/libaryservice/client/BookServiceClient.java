@@ -2,7 +2,6 @@ package com.example.libaryservice.client;
 
 import com.example.libaryservice.dto.response.BookDto;
 import com.example.libaryservice.dto.response.BookIdDto;
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.openfeign.FeignClient;

@@ -5,6 +5,8 @@ import com.example.bookservice.dto.request.CreateBookRequest;
 import com.example.bookservice.dto.response.BookDto;
 import com.example.bookservice.dto.response.BookIdDto;
 import com.example.bookservice.service.BookService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +18,8 @@ import java.util.List;
 public class BookController {
 
     private final BookService bookService;
+    Logger logger = LoggerFactory.getLogger(BookController.class);
+
 
     public BookController(BookService bookService) {
         this.bookService = bookService;
@@ -34,6 +38,7 @@ public class BookController {
 
     @GetMapping("/{id}")
     public ResponseEntity<BookDto> getBookById(@PathVariable String id){
+        logger.info("return book by id " + id);
         return ResponseEntity.ok(bookService.findBookById(id));
     }
 

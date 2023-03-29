@@ -28,10 +28,10 @@ public class BookServiceApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Book book1 = new Book("Harry Potter" , "JR" , "34255343" , "PSG" , 2012);
-		Book book2 = new Book("Life" , "Alex" , "9348494" , "AJAX" , 2020);
-		Book book3 = new Book("Water" , "Herry" , "2345323" , "Ist" ,1999);
-		List<Book> books = bookRepository.saveAll(Arrays.asList(book1 , book2 , book3));
-		System.out.println(books);
+//		Book book1 = new Book("Harry Potter" , "JR" , "34255343" , "PSG" , 2012);
+//		Book book2 = new Book("Life" , "Alex" , "9348494" , "AJAX" , 2020);
+//		Book book3 = new Book("Water" , "Herry" , "2345323" , "Ist" ,1999);
+//		List<Book> books = bookRepository.saveAll(Arrays.asList(book1 , book2 , book3));
+//		System.out.println(books);
 	}
 }
