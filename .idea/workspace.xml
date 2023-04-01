@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d71d0f7-5eaa-4dac-a1da-1537063d038d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="9d71d0f7-5eaa-4dac-a1da-1537063d038d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +161,7 @@
       <workItem from="1680235026318" duration="5454000" />
       <workItem from="1680242150839" duration="919000" />
       <workItem from="1680248757671" duration="606000" />
-      <workItem from="1680331213486" duration="5208000" />
+      <workItem from="1680331213486" duration="5551000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1678390919058</created>
@@ -222,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680343686135</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added cloud config">
+      <created>1680351148714</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680351148714</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
