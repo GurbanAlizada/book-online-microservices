@@ -20,7 +20,7 @@ import java.util.List;
 @RequestMapping("/v1/library")
 public class LibraryController {
 
-    @Value("${library-service.count}")
+    @Value("${library-service.book.count}")
     private Integer count;
 
     Logger logger = LoggerFactory.getLogger(LibraryController.class);

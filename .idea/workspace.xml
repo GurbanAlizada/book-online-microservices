@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d71d0f7-5eaa-4dac-a1da-1537063d038d" name="Changes" comment="" />
+    <list default="true" id="9d71d0f7-5eaa-4dac-a1da-1537063d038d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_vault_config_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_vault_config_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_vault_spring_vault_core_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/volumes/config/vault.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/java/com/example/libaryservice/controller/LibraryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libary-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +64,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -68,7 +79,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.32720104" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
@@ -119,11 +130,54 @@
     </configuration>
     <configuration name="LibaryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="libary-service" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.libaryservice.LibraryServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="config: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="config/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="config.vault: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="vault" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="config/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.config.vault: Compose Deployment" />
+      <item itemvalue="Docker.config: Compose Deployment" />
+      <item itemvalue="Spring Boot.BookServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.EurokaServerApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.LibaryServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.config: Compose Deployment" />
+        <item itemvalue="Docker.config.vault: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -161,7 +215,9 @@
       <workItem from="1680235026318" duration="5454000" />
       <workItem from="1680242150839" duration="919000" />
       <workItem from="1680248757671" duration="606000" />
-      <workItem from="1680331213486" duration="5551000" />
+      <workItem from="1680331213486" duration="10213000" />
+      <workItem from="1680364128141" duration="10765000" />
+      <workItem from="1680415642875" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1678390919058</created>
@@ -226,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680351148714</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added cloud config">
+      <created>1680351325877</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680351325877</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
